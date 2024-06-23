@@ -1,4 +1,4 @@
-// htmlcss progress circular bar
+
 let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
 
@@ -19,7 +19,7 @@ let progresshtml = setInterval(() => {
   }
 }, htmlspeed);
 
-// javasript progress circular bar
+
 let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
@@ -40,7 +40,7 @@ let progressjs = setInterval(() => {
   }
 }, jsspeed);
 
-// php progress circular bar
+
 let phpProgress = document.querySelector(".php"),
   phpValue = document.querySelector(".php-progress");
 
@@ -79,22 +79,22 @@ $(document).ready(function () {
 });
 
 document.getElementById("submit-btn").addEventListener("click", function (e) {
-  e.preventDefault(); // Prevent the default form submission
+  e.preventDefault(); 
 
-  // Collect form data
+
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var mobile = document.getElementById("mobile").value;
   var message = document.getElementById("message").value;
 
-  // Prepare data to send
+
   var formData = new FormData();
   formData.append("name", name);
   formData.append("email", email);
   formData.append("mobile", mobile);
   formData.append("message", message);
 
-  // Send data to the server using fetch
+ 
   fetch(
     "https://script.google.com/macros/s/AKfycbzrDTN3MoNsqqkX-B3pVaxj5ESKM2Z_tLiKUl875H7nKV0PDSGgPAjGFUznepzwyl5MlQ/exec",
     {
@@ -116,7 +116,7 @@ document.getElementById("submit-btn").addEventListener("click", function (e) {
     });
 });
 
-// javascript for sticky navbar even if u scroll the navbar will be fixed
+
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
@@ -132,12 +132,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// adding funtionality to back to top button
 
-//Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -148,7 +145,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// When the user clicks on the button, scroll to the top of the document
+
 mybutton.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
